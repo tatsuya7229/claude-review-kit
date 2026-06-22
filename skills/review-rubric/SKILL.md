@@ -1,6 +1,6 @@
 ---
 name: review-rubric
-description: コードレビューの共通基準（重要度3段階・スキップ規則・出力フォーマット・根拠主義の原則）。correctness-reviewer / design-reviewer / convention-reviewer / review-verifier の各サブエージェントが frontmatter の skills: で preload して参照する単一の真実源。レビュー観点そのものは各エージェントが持ち、本スキルは「どう重要度を付け、何を無視し、どう書くか」を全員で揃えるために使う。
+description: コードレビューの共通基準（重要度3段階・スキップ規則・出力フォーマット・根拠主義の原則）。correctness-reviewer / design-reviewer / convention-reviewer / review-verifier の各サブエージェントが frontmatter の skills フィールドで preload して参照する単一の真実源。レビュー観点そのものは各エージェントが持ち、本スキルは「どう重要度を付け、何を無視し、どう書くか」を全員で揃えるために使う。
 ---
 
 # Review Rubric（レビュー共通ルブリック）
