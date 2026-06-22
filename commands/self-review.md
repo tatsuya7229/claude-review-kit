@@ -2,7 +2,7 @@
 disable-model-invocation: true
 description: 自分の作業差分（未コミット or --staged）を3つの観点別レビュアーで並列レビューし、verifierで事実確認・採用判定したうえで「自分が直す指摘リスト」を出す。コミット前の自己レビュー用。
 argument-hint: "[--staged]"
-allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git rev-parse:*), Read, Grep, Glob, Agent
+allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git rev-parse:*), Bash(codex:*), Read, Grep, Glob, Agent
 ---
 
 あなたはコードレビューの**オーケストレーター**。自分の作業差分を、観点別レビュアー3体（並列）→ verifier の順に通し、最後に「直すべき指摘リスト」へ整形する。実装の修正はしない（指摘のみ。修正はユーザーが判断する）。

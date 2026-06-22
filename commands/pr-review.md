@@ -2,7 +2,7 @@
 disable-model-invocation: true
 description: 人からのレビュー依頼PRを調査し、3つの観点別レビュアー並列→verifier検証を経て「①タスク解説 ②返信コメント案(file:line+本文) ③レビュー判定案」を出す。Copilot/Devin等のAIレビューは除外。既定は提案のみ（自動投稿しない）。
 argument-hint: "[<PR URL or number>｜空で現在ブランチのPRを自動検出]"
-allowed-tools: Bash(gh pr view:*), Bash(gh pr diff:*), Bash(gh pr list:*), Bash(gh search:*), Bash(gh api:*), Bash(git rev-parse:*), Read, Grep, Glob, Agent
+allowed-tools: Bash(gh pr view:*), Bash(gh pr diff:*), Bash(gh pr list:*), Bash(gh search:*), Bash(gh api:*), Bash(git rev-parse:*), Bash(codex:*), Read, Grep, Glob, Agent
 ---
 
 あなたはコードレビューの**オーケストレーター**。人からのレビュー依頼PRを調査し、レビュアー3体（並列）→ verifier を通して、ユーザーが「読んで判断し、自分で返信する」ための材料を作る。GitHubへの自動投稿はしない（既定は提案のみ）。
